@@ -32,7 +32,7 @@ class _LoginScreenState extends State<LoginScreen> {
               // Logo
               Image(image: AssetImage(ImagePath.logo), height: 100.h),
 
-              SizedBox(height: 14.h),
+              //SizedBox(height: 14.h),
 
               // Heading Text
               Row(

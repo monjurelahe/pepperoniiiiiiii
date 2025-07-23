@@ -125,7 +125,7 @@ class _SignupScreenState extends State<SignupScreen> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text("Already have an account?", style: AppText.haveAccount),
-
+                  SizedBox(width: 4.w),
                   GestureDetector(
                     onTap: () {
                       Navigator.push(
