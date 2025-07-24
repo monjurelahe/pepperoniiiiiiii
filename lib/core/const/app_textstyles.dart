@@ -62,7 +62,7 @@ class AppText {
     fontSize: 16,
     fontWeight: FontWeight.w500,
     fontFamily: 'Poppins',
-    color: Color.fromRGBO(30, 30, 30, 1),
+    color: Color.fromRGBO(30, 30, 30, 30),
     letterSpacing: 0.3,
   );
 

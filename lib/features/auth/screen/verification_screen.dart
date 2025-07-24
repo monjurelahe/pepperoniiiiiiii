@@ -39,13 +39,16 @@ class VerificationScreen extends StatelessWidget {
 
                 //Textfield
                 Padding(
-                  padding: const EdgeInsets.all(20.0),
+                  padding: const EdgeInsets.fromLTRB(11, 11, 0, 0),
                   child: buildLabel('Email'),
                 ),
-                CustomTextField(
-                  controller: emailController,
-                  hint: 'Enter your email',
-                  inputType: TextInputType.emailAddress,
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: CustomTextField(
+                    controller: emailController,
+                    hint: 'Enter your email',
+                    inputType: TextInputType.emailAddress,
+                  ),
                 ),
 
                 SizedBox(height: 22),

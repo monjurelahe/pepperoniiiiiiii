@@ -19,7 +19,9 @@ class MyApp extends StatelessWidget {
         return MaterialApp(
           debugShowCheckedModeBanner: false,
           theme: ThemeData(
-            colorScheme: ColorScheme.fromSeed(seedColor: Colors.orangeAccent),
+            colorScheme: ColorScheme.fromSeed(
+              seedColor: Color.fromRGBO(245, 245, 245, 1),
+            ),
           ),
           home: LoginScreen(),
         );

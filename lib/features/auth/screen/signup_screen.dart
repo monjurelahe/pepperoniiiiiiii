@@ -32,8 +32,6 @@ class _SignupScreenState extends State<SignupScreen> {
               // Logo
               Image(image: AssetImage(ImagePath.logo)),
 
-              //SizedBox(height: 4.h),
-
               // Heading Text
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -180,7 +178,6 @@ class _SignupScreenState extends State<SignupScreen> {
             ],
           ),
         ),
-        //Text(text, style: AppText.firstName),
       ),
     );
   }
