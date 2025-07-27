@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:pepperoniiiii/features/auth/screen/login_screen.dart';
+import 'package:get/get.dart';
+import 'package:pepperoniiiii/route/app_route.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(const MyApp());
 }
 
@@ -16,14 +18,17 @@ class MyApp extends StatelessWidget {
       minTextAdapt: true,
       splitScreenMode: true,
       builder: (context, child) {
-        return MaterialApp(
+        return GetMaterialApp(
           debugShowCheckedModeBanner: false,
           theme: ThemeData(
             colorScheme: ColorScheme.fromSeed(
               seedColor: Color.fromRGBO(245, 245, 245, 1),
             ),
           ),
-          home: LoginScreen(),
+          getPages: AppRoute.routes,
+          // initialRoute: AppRoute.splashScreen,
+          // builder: EasyLoading.init(),
+          initialRoute: AppRoute.loginScreen,
         );
       },
     );
