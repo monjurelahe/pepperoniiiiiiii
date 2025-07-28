@@ -16,7 +16,7 @@ class VerificationScreen extends StatelessWidget {
       body: Stack(
         children: [
           Padding(
-            padding: const EdgeInsetsGeometry.only(top: 50),
+            padding: const EdgeInsetsGeometry.only(top: 40),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
@@ -46,7 +46,7 @@ class VerificationScreen extends StatelessWidget {
                   padding: const EdgeInsets.all(8.0),
                   child: CustomTextField(
                     controller: emailController,
-                    hint: 'Enter your email',
+                    hint: 'Enter your email adress',
                     inputType: TextInputType.emailAddress,
                   ),
                 ),

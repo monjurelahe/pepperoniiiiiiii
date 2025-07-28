@@ -45,24 +45,27 @@ class OtpScreen extends StatelessWidget {
                     child: OtpTextField(
                       numberOfFields: 4,
                       showFieldAsBox: true,
-                      fieldWidth: 62.w, // make square width
+                      fieldWidth: 57.w, // make square width
                       fieldHeight: 62.h,
                       filled: true,
+                      //enabledBorderColor: Appcolors.greenColor,
+                      focusedBorderColor: Appcolors.greenColor,
                       fillColor: Colors.white,
                       borderRadius: BorderRadius.circular(10.r),
+                      borderColor: Colors.green,
                       onCodeChanged: (String code) {},
                       onSubmit: (String verificationCode) {
-                        showDialog(
-                          context: context,
-                          builder: (context) {
-                            return AlertDialog(
-                              title: Text("Verification Code"),
-                              content: Text(
-                                'Code entered is $verificationCode',
-                              ),
-                            );
-                          },
-                        );
+                        // showDialog(
+                        //   context: context,
+                        //   builder: (context) {
+                        //     return AlertDialog(
+                        //       title: Text("Verification Code"),
+                        //       content: Text(
+                        //         'Code entered is $verificationCode',
+                        //       ),
+                        //     );
+                        //   },
+                        // );
                       },
                     ),
                   ),
